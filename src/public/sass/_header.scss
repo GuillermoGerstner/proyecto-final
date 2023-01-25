@@ -1,0 +1,98 @@
+@use 'variables';
+
+.header{
+    //border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+    @media (min-width: 1115px){
+        height: 112px;
+        border-bottom: 1px solid variables.$Grayish-blue;
+    }
+    &__navigation{
+        width: 225px;
+        height: 100%;
+        //border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (min-width: 1115px){
+            width: 470px;
+        }
+    }
+    &__menu{
+        //border: 1px solid rebeccapurple;
+        width: 20px;
+        &:hover{
+            cursor: pointer;
+            content: url('/img/icon-menu_color.svg');
+        }
+        @media(min-width: 1115px){
+            display: none;
+        }
+    }
+    &__logo{
+        //border: 1px solid blue;
+        //margin-left: 20px;
+        font-weight: 700;
+        font-size: 2.2em;
+        &-link{
+            //border: 1px solid blue;
+            color: variables.$Black;
+            text-decoration: none;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__page{
+        font-size: 1.4em;
+        margin-top: 10px;
+        @media (min-width: 1115px){
+            font-size: 1.8em;
+        }
+    }
+    &__cart-avatar{
+        //border: 1px solid rebeccapurple;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70px;
+        @media (min-width: 1115px){
+            width: 90px;
+        }
+    }
+    &__cart{
+        position: relative;
+        &--notification{
+            display: none;
+            background-color: variables.$Color;
+            width: 15px;
+            height: 12px;
+            border-radius: 16px;
+            position: absolute;
+            top: -2px;
+            right: -5px;
+            font-size: 0.6em;
+            text-align: center;
+            color: variables.$White;
+        }
+        &:hover{
+            cursor: pointer;
+            content: url('/img/icon-cart_color.svg');
+        }
+    }
+    &__avatar{
+        width: 26px;
+        @media (min-width: 1115px){
+            width: 30px;
+        }
+        &:hover{
+            cursor: pointer;
+            border: 2px solid variables.$Color;
+            border-radius: 50%;
+        }
+    }
+}

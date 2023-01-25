@@ -1,0 +1,54 @@
+@use 'variables';
+@use 'mixins';
+
+.gallery{
+    &__image-container{
+        //border: 1px solid red;
+        height: 300px;
+        width: 100%;
+        background-image: url('/img/image-product-1.jpg');
+        //background-position-y: -35px;
+        background-size: cover;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__previous{
+        @include mixins.image-btn(170px, 15px, true);
+        &:hover{
+            content: url('/img/icon-previous_color.svg');
+        }
+    }
+    &__next{
+        @include mixins.image-btn(170px, 320px, true);
+        &:hover{
+            content: url('/img/icon-next_color.svg');
+        }
+    }
+    &__thumbnails{
+        display: none;
+        @media (min-width: 1115px){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__thumbnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid variables.$Color;
+        }
+    }
+    @media (min-width: 1115px){
+        width: 446px;
+        &__image-container{
+            background-position-y: 0;
+            background-position-x: -60px;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+        }
+    }
+}

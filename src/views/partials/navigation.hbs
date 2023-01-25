@@ -1,0 +1,59 @@
+<header class="header">
+    <div class="header__navigation">
+        <img class="header__menu" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" alt="menu icon">
+        <!--<img class="header__logo" src="" alt="logo">-->
+        <h1 class="header__logo">
+            <a class="header__logo-link" href="/">3D Shop</a>
+        </h1>
+    
+        <nav class="navbar">
+            <ul class="navbar__items">
+                <li><a class="navbar__link" href="/order" target="">Order</a></li>
+                <li><a class="navbar__link" href="/about" target="">About</a></li>
+                <li><a class="navbar__link" href="/contact" target="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- inicio modal navbar -->
+    <div class="modal-navbar__background">
+        <nav class="modal-navbar">
+            <img class="modal-navbar__close-icon" src="img/icon-close_gray.svg" alt="">
+            <ul class="modal-navbar__items">
+                <li><a class="modal-navbar__link" href="/order" target="">Order</a></li>
+                <li><a class="modal-navbar__link" href="/about" target="">About</a></li>
+                <li><a class="modal-navbar__link" href="/contact" target="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- final modal navbar -->
+
+    <div class="header__cart-avatar">
+        <div class="header__cart">
+            <div class="header__cart--notification">0</div>
+            <img src="img/icon-cart.svg" alt="">
+        </div>
+        {{#if user}}
+            <div class="nav-item dropdown header__avatar--link">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="header__avatar" src="https://cdn0.iconfinder.com/data/icons/eon-social-media-contact-info-2/32/user_people_person_users_man-512.png" title="" alt="">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/products">Products</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/users/logout">Logout</a></li>
+                </ul>
+            </div>
+        {{else}}
+            <div class="nav-item dropdown header__avatar--link">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="header__avatar" src="https://cdn0.iconfinder.com/data/icons/eon-social-media-contact-info-2/32/user_people_person_users_man-512.png" title="" alt="">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/users/signin">Login</a></li>
+                    <li><a class="dropdown-item" href="/users/signup">Register</a></li>
+                </ul>
+            </div>
+        {{/if}}
+    </div>
+</header>

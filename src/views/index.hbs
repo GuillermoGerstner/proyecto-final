@@ -1,0 +1,75 @@
+
+<main class="main-container">
+    <section class="content">
+        <article class="gallery">
+            <div class="gallery__image-container">
+                <img class="gallery__previous" src="img/icon-previous.svg" alt="previous">
+                <img class="gallery__next" src="img/icon-next.svg" alt="next">
+            </div>
+            <div class="gallery__thumbnails">
+                <img id="1" class="gallery__thumbnail" src="img/image-product-1-thumbnail.jpg" alt="thumnail">
+                <img id="2" class="gallery__thumbnail" src="img/image-product-2-thumbnail.jpg" alt="thumnail">
+                <img id="3" class="gallery__thumbnail" src="img/image-product-3-thumbnail.jpg" alt="thumnail">
+                <img id="4" class="gallery__thumbnail" src="img/image-product-4-thumbnail.jpg" alt="thumnail">
+            </div>
+        </article>
+
+        <article class="details">
+            <h2 class="details__company">by <a class="details__link" href="https://www.thingiverse.com/parallelgoods/designs" target="_blank">parallelgoods</a></h2>
+            <h2 class="details__title">Self-Watering Planter</h2>
+            <p class="details__description">
+                This Self-Watering Planter is exactly the growing environment your plants need, while giving you flexibility in your watering routine. It’s super easy to use: just plant your favorite herb or other water-intensive plant, add water, and you’re all set.
+            </p>
+            <div class="details__prices">
+                <p class="details__now">$5.00 <span class="details__discount">50%</span></p>
+                <p class="details__before">$10.00</p>
+            </div>
+            <div class="details__product-quantity">
+                <div class="input">
+                    <img class="input__minus" src="img/icon-minus.svg" alt="minus">
+                    <input class="input__number" type="text" value="0" readonly onmousedown="return false;">
+                    <img class="input__plus" src="img/icon-plus.svg" alt="plus">
+                </div>
+                <button class="details__button"> <img src="img/icon-cart_white.svg" alt=""> Add to cart</button>
+            </div>
+        </article>
+    </section>
+
+    <!--inicio cart modal-->
+    <div class="cart-modal">
+        <p class="cart-modal__title">Cart</p>
+        <div class="cart-modal__checkout-container">
+            <div class="cart-modal__details-container">
+                <img class="cart-modal__image" src="img/image-product-1.jpg" alt="">
+                <div>
+                    <p class="cart-modal__product">Self-Watering Planter</p>
+                    <p class="cart-modal__price">$5.00 x0 <span>$0</span></p>
+                </div>
+                <img class="cart-modal__delete" src="img/icon-delete.svg" alt="delete">
+            </div>
+            <button class="cart-modal__checkout">Checkout</button>
+        </div>
+    </div>
+    <!--final cart modal-->
+
+</main>
+
+<!--inicio gallery modal-->
+<div class="gallery-modal__background">
+    <article class="gallery-modal">
+        <div class="gallery-modal__close-container">
+            <img class="gallery-modal__close" src="img/icon-close.svg" alt="icon_close">
+        </div>
+        <div class="gallery-modal__image-container">
+            <img class="gallery-modal__previous" src="img/icon-previous.svg" alt="previous">
+            <img class="gallery-modal__next" src="img/icon-next.svg" alt="next">
+        </div>
+        <div class="gallery-modal__thumbnails">
+            <img id="m1" class="gallery-modal__thumbnail" src="img/image-product-1-thumbnail.jpg" alt="thumnail">
+            <img id="m2" class="gallery-modal__thumbnail" src="img/image-product-2-thumbnail.jpg" alt="thumnail">
+            <img id="m3" class="gallery-modal__thumbnail" src="img/image-product-3-thumbnail.jpg" alt="thumnail">
+            <img id="m4" class="gallery-modal__thumbnail" src="img/image-product-4-thumbnail.jpg" alt="thumnail">
+        </div>
+    </article>
+</div>
+<!--final gallery modal-->

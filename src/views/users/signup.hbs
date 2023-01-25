@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card products__card">
+            <img class="products__avatar" src="https://cdn0.iconfinder.com/data/icons/eon-social-media-contact-info-2/32/user_people_person_users_man-512.png" title="" alt="">
+            <div class="cardheader products__title">
+                Account Register
+            </div>
+            <div class="card-body">
+                <form action="/users/signup" method="post" class="products__card-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control products__input" name="name" placeholder="Name" value="{{name}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control products__input" name="email" placeholder="Email" value="{{email}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control products__input" name="password" placeholder="Password" value="{{password}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control products__input" name="confirm_password" placeholder="Confirm Password" value="{{confirm_password}}">
+                    </div>
+                    <button class="btn btn-primary btn-block products__btn">
+                        Sign Up
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

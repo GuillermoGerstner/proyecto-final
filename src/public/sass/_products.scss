@@ -1,0 +1,43 @@
+@use 'variables';
+@use 'mixins';
+
+.products{
+
+
+    &__card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-form{
+            display: grid;    
+        }
+    }
+    &__item{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__avatar{
+        width: 75px;
+        margin-top: 10px;
+    }
+    &__title{
+        font-size: 1.4em;
+    }
+    &__add{
+        align-items: center;
+        &-title{
+            margin: 5px;
+            font-size: 2.0em;
+        }
+        &-icon{
+            margin: 5px;
+        }
+    }
+    &__input{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    &__btn{
+        height: 50px;
+    }
+}

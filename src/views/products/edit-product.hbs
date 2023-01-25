@@ -1,0 +1,26 @@
+<div class="dol-md-4 mx-auto wdw">
+    <div class="card">
+        <div class="card-header">
+            <h3>Edit Product</h3>
+        </div>
+        <div class="card-body">
+            <form action="/products/edit/{{product._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group mb10 fm">
+                    <input type="text" name="title" class="form-control" value="{{product.title}}">
+                </div>
+                <div class="form-group mb10">
+                    <textarea name="description" class="form-control">{{product.description}}</textarea>
+                </div>
+                <div class="form-group mb10">
+                    <input type="number" name="amount" class="form-control" value="{{product.amount}}">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

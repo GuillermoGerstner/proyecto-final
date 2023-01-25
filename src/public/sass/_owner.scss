@@ -1,0 +1,18 @@
+@use 'variables';
+
+.owner{
+    //border: 1px solid greenyellow;
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: variables.$Black;
+    &__text{
+        //border: 1px solid red;
+        color: variables.$White;
+        font-weight: 100;
+        font-size: 1.2em;
+    }
+}
