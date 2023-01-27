@@ -25,7 +25,6 @@ let cartNotification = document.querySelector('.header__cart--notification');
 let lastValue = parseInt(cartNotification.innerText);
 
 addToCartBtn.addEventListener('click', ()=>{
-    click();
 
     lastValue = lastValue + userInputNumber;
 
@@ -65,7 +64,7 @@ cartIconBtn.addEventListener('click', ()=>{
 function deleteProduct() {
     const deleteProductBtn = document.querySelector('.cart-modal__delete');
     deleteProductBtn.addEventListener('click', ()=>{
-        click();
+
         productContainer.innerHTML = '<p class="cart-empty">Your cart is empty</p>';
         lastValue = 0;
         cartNotification.innerText = lastValue;
@@ -77,10 +76,10 @@ function deleteProduct() {
     });
 }
 
-//Checkout button.                          ERROR NO ENCONTRADO
-const checkoutBtn = document.querySelector('.cart-modal__checkout');
+//Checkout button.              NOT AVAILABLE
+const checkoutBtn = document.getElementById('checkoutBtn');
 checkoutBtn.addEventListener('click', ()=>{
-    click();
+    
 });
 
 //Cambiar imagenes producto.
@@ -156,11 +155,6 @@ nextModalBtn.addEventListener('click', ()=>{
 previousModalBtn.addEventListener('click', ()=>{
     changePreviousImage(modalImageContainer);
 });
-
-//Check click.
-function click() {
-    console.log('click');
-}
 
 // FUNCIONES
 
