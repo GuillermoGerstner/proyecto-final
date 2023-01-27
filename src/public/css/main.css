@@ -507,6 +507,11 @@ body {
   cursor: pointer;
   opacity: 0.5;
 }
+.cart-modal__checkout:hover {
+  cursor: not-allowed;
+  opacity: unset;
+  background-color: red;
+}
 
 .gallery-modal {
   width: 550px;

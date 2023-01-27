@@ -48,5 +48,10 @@
     }
     &__checkout{
         @include mixins.button;
+        &:hover{
+            cursor: not-allowed;
+            opacity: unset;
+            background-color: red;
+        }
     }
 }
