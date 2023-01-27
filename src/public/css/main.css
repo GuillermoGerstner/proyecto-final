@@ -448,12 +448,18 @@ body {
   border-radius: 8px;
   box-shadow: 3px 3px 10px;
   position: absolute;
-  top: 75px;
+  top: 30px;
   background-color: hsl(0deg, 0%, 100%);
-  right: 6px;
+  right: -16px;
   /*&__product{
 
   }*/
+}
+@media (min-width: 1115px) {
+  .cart-modal {
+    top: 10px;
+    margin-right: 0px;
+  }
 }
 .cart-modal__title {
   font-weight: 700;

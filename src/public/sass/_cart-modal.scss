@@ -8,9 +8,13 @@
     border-radius: 8px;
     box-shadow: 3px 3px 10px;
     position: absolute;
-    top: 75px;
+    top: 30px;
     background-color: variables.$White;
-    right: 6px;
+    right: -16px;
+    @media (min-width: 1115px){
+        top: 10px;
+        margin-right: 0px;
+    }
     &__title{
         font-weight: 700;
         padding: 24px;
